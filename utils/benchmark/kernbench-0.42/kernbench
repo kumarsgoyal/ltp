@@ -98,7 +98,7 @@ if [[ $fast_run -eq 0 ]] ; then
 	echo Caching kernel source in ram...
 	find . -type f | while IFS= read -r i
 	do
-		cat $i > /dev/null
+		cat "$i" > /dev/null
 	done
 fi
 
